@@ -20,17 +20,17 @@ define(function(require, exports, module) {
 
     var stars = new ImageSurface({
       size: [1500, 1500],
-      content: 'stars_1.png',
+      content: 'content/images/stars_1.png',
   });
 
     var stars2 = new ImageSurface({
       size: [1500, 1500],
-      content: 'star_2.png',
+      content: 'content/images/star_2.png',
   });
 
     var stars3 = new ImageSurface({
       size: [1500, 1500],
-      content: 'stars_3.png',
+      content: 'content/images/stars_3.png',
   });
 
   var centerSpinModifier = new Modifier({
