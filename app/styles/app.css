@@ -1,0 +1,35 @@
+
+body {
+	background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/06/galaxy-wallpapers-21.jpg);
+}
+h3 {
+	position: absolute;
+	font-family: Helvetica;
+	text-align: center;
+	color: white;
+}
+h1 {
+	position: absolute;
+	font-family: Helvetica;
+	text-align: center;
+	color: white;
+}
+
+#scene {
+	max-width: 100px;
+}
+
+li.layer_1 {
+
+	position: top;
+}
+
+li.layer_2 {
+
+	position: top;
+}
+
+li.layer_3 {
+
+	position: top;
+}

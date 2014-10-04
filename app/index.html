@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Project Style</title>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- build:css(app/) css/famous.css -->
+  <link rel="stylesheet" type="text/css" href="lib/famous/core/famous.css" />
+  <!-- endbuild -->
+
+  <!-- build:css(app/) css/app.css -->
+  <link rel="stylesheet" type="text/css" href="styles/app.css" />
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js(app/) src/polyfills.js -->
+  <script type="text/javascript" src="lib/famous-polyfills/functionPrototypeBind.js"></script>
+  <script type="text/javascript" src="lib/famous-polyfills/classList.js"></script>
+  <script type="text/javascript" src="lib/famous-polyfills/requestAnimationFrame.js"></script>
+  <!-- endbuild -->
+
+  <!-- process:remove:dev -->
+  <script type="text/javascript" src="src/main.js"></script>
+  <!-- /process -->
+
+  <!-- process:remove:dist -->
+  <script type="text/javascript" src="lib/requirejs/require.js" data-main="src/requireConfig"></script>
+  <!-- /process -->
+  <script type"text/javascript" src="deploy/parallax.min.js"></script>
+
+</head>
+<body>
+  <ul id="scene">
+    <li class="layer" id="layer_2" data-depth="0.70"><img src="content/images/science.png"></li>
+    <li class="layer" id="layer_3" data-depth="0.80"><img src="content/images/p&f_ac.png"></li>
+    <li class="layer" id="layer_1" data-depth="0.20"><img src="content/images/dude.png"></li>
+  </ul>
+
+  <script>
+    var scene = document.getElementById('scene');
+   var parallax = new Parallax(scene);
+  </script>
+</body>
+</html>
